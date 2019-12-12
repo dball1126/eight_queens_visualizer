@@ -1,39 +1,7 @@
 .actual-node {
-    width:25px;
-    background-color:#CCC;
+    width: 80px;
+    height: 80px;
     /* background-color: #FFFFFF; */
     padding-bottom:1px;
     border: 1px solid #FFFFFF;
   }
-
-  #node-0{height:100px;}
-  #node-1{height:120px;}
-  #node-2{height:140px;}
-  #node-3{height:160px;}
-  #node-4{height:180px;}
-  #node-5{height:200px;}
-  #node-6{height:220px;}
-  #node-7{height:240px;}
-  #node-8{height:260px;}
-  #node-9{height:280px;}
-  #node-10{height:300px;}
-  #node-11{height:320px;}
-  #node-12{height:340px;}
-  #node-13{height:360px;}
-  #node-14{height:380px;}
-  #node-15{height:400px;}
-  #node-16{height:420px;}
-  #node-17{height:440px;}
-  #node-18{height:460px;}
-  #node-19{height:480px;}
-  #node-20{height:500px;}
-  #node-21{height:520px;}
-  #node-22{height:540px;}
-  #node-23{height:560px;}
-  #node-24{height:580px;}
-  #node-25{height:600px;}
-  #node-26{height:620px;}
-  #node-27{height:640px;}
-  #node-28{height:660px;}
-  #node-29{height:680px;}
-  #node-30{height:700px;}

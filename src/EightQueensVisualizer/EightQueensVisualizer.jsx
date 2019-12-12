@@ -6,16 +6,23 @@ export default function EightQueensVisualizer(){
     const nodes = React.useMemo(() => state.nodes, []);
 
     useEffect(() =>{
-        for (let row = 0; row < 30; row++) {
+        for (let row = 0; row < 8; row++) {
+            const currentRow = [];
+            for (let col = 0; col < 8; col++) {
                 const currentNode = {
-                    val : row
+                    row,
+                    col,
                 }
-            nodes.push(currentNode)
+    
+                currentRow.push(currentNode)
+            }
+    
+            nodes.push(currentRow)
         }
 
             setState(prevState => {
                 
-                return { ...prevState, ...nodes.sort(() => Math.random() - 0.5) }
+                return { ...prevState, ...nodes }
             });
     }, []);
        
@@ -32,11 +39,15 @@ export default function EightQueensVisualizer(){
 
                         return (
                             <div className="nodes" key={idx}>
-                               
-                                     <Node key={idx}
-                                        val={row}
+                                {row.map((node, nodeIdx) => {
+                                    const { row, col } = node;
+                                    return <Node key={nodeIdx}
+                                        row={row}
+                                        col={col}
+                                       
                                     />
-                                
+                                })
+                                }
                             </div>
                         )
                     })}
