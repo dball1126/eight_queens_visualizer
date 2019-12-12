@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -28,6 +29,7 @@
 
 .grid {
   display: flex;
+  transform: rotate(180deg);
   border: 20px solid black;
   box-shadow: 1px 1px 5px 5px #dbdb79;
   -webkit-box-shadow: 1px 1px 5px 5px #dbdb79;
@@ -35,13 +37,7 @@
 /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
 }
 
-.actual-node {
-  width:20px;
-  height:20px;
-  background-color: #FFFFFF;
-  padding-bottom:1px;
-  border: 1px solid #00c9ff;
-}
+
 
 .actual-node.node-start{
  background-color: green;
@@ -153,5 +149,5 @@
 }
 
 body{
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }

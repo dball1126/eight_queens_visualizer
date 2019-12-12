@@ -1,16 +1,14 @@
 import React from 'react';
 
-export default function Node(props) {
-        const start = props.start, end = props.end, row = props.row, col = props.col, wall = props.wall;
+export default function Node({val}) {
 
-        let classNameX = start ? 'node-start' : end ? 'node-end' : ''
+        // let classNameX = start ? 'node-start' : end ? 'node-end' : ''
         
-        if (wall) classNameX = 'wall';
-               
+        
         
 
         return (
-        <div className={`actual-node ${classNameX}`} id={`node-${row}-${col}`}>
+        <div className={`actual-node ${"classNameX"}`} id={`node-${val.val}`}>
            
         </div>)
 }

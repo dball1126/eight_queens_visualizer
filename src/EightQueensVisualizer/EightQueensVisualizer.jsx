@@ -12,10 +12,10 @@ export default function EightQueensVisualizer(){
                 }
             nodes.push(currentNode)
         }
-        
+
             setState(prevState => {
                 
-                return { ...prevState, ...nodes }
+                return { ...prevState, ...nodes.sort(() => Math.random() - 0.5) }
             });
     }, []);
        
@@ -34,7 +34,7 @@ export default function EightQueensVisualizer(){
                             <div className="nodes" key={idx}>
                                
                                      <Node key={idx}
-                                        row={row}
+                                        val={row}
                                     />
                                 
                             </div>
